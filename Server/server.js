@@ -15,7 +15,7 @@ const tableData = [
 ];
 
 app.get('/api/table', (req, res) => {
-  res.json(tableData);
+  res.json({table:tableData});
 });
 
 // Sample data for the pie chart
@@ -24,11 +24,12 @@ const pieChartData = [
   { label: 'Category B', value: 20 },
   { label: 'Category C', value: 15 },
   { label: 'Category D', value: 25 },
-  { label: 'Category E', value: 10 },
+  { label: 'Category E', value: 15 },
 ];
 
 app.get('/api/pie-chart', (req, res) => {
-  res.json(pieChartData);
+ 
+  res.json({chart:pieChartData});
 });
 
 // Sample data for the graph
@@ -41,7 +42,7 @@ const graphData = [
 ];
 
 app.get('/api/graph', (req, res) => {
-  res.json(graphData);
+  res.json({graph:graphData});
 });
 
 app.listen(PORT, () => {
