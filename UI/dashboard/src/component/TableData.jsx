@@ -10,7 +10,7 @@ export default function TableData() {
       try {
         const response = await axios.get("http://localhost:3001/api/table");
         console.log("table", response.data);
-        setTableData(response.data);
+        setTableData(response.data.table);
       } catch (error) {
         console.error("Error fetching table data:", error);
       }

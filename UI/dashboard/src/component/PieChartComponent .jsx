@@ -20,7 +20,7 @@ const PieChartComponent = () => {
 
   var xValues = [];
   var yValues = [];
-  var barColors = ["red", "green", "blue", "orange", "brown"];
+  var barColors = ["#439A97", "#59C1BD", "#A0E4CB", "#8EC3B0", "#68B984"];
 
   pieChartData.map((item) => {
     xValues.push(item.label);
@@ -41,14 +41,15 @@ const PieChartComponent = () => {
       legend: { display: false },
       title: {
         display: true,
-        text: "PieChartData",
+       
       },
     },
   });
 
   return (
     <div>
-      <canvas id="myChart" style={{ width: "100%", maxWidth: "900px" }}>
+      <h4>Good Morning 🌞 </h4>
+      <canvas id="myChart" style={{ width: "100%", maxWidth: "650px"}}>
         {" "}
       </canvas>
     </div>

@@ -24,7 +24,7 @@ export default function Graphdata() {
     if (graphData.length > 0 && canvasRef.current) {
       const xValues = graphData.map(item => item.x);
       const yValues = graphData.map(item => item.y);
-      const barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+      const barColors = ["#BEFFF7", "#A6F6FF", "#9EDDFF", "#6499E9", "#80B3FF"];
 
       new Chart(canvasRef.current, {
         type: "pie",
